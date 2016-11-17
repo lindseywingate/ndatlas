@@ -59,7 +59,6 @@ app.get('/students', function (req, res) {
     });
 });
 
-<<<<<<< HEAD
 app.get('/development', function (req, res) {
     res.render('development', {
         'title': 'North Dakota Atlas | Development',
@@ -73,6 +72,15 @@ app.get('/population', function (req, res) {
     res.render('population', {
         'title': 'North Dakota Atlas | Population Map',
         'active': 'population',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
+app.get('/railroads', function (req, res) {
+    res.render('railroads', {
+        'title': 'North Dakota Atlas | Railroads Map',
+        'active': 'railroads',
         'urlbase': dev,
         'url': url
     });
