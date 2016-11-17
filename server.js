@@ -86,6 +86,15 @@ app.get('/railroads', function (req, res) {
     });
 });
 
+app.get('/religion', function (req, res) {
+    res.render('religion', {
+        'title': 'North Dakota Atlas | Religious Affiliation Map',
+        'active': 'religion',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
 //////////////////////////////////////
 // END OF ROUTES
 //////////////////////////////////////
