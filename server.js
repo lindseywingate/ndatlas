@@ -6,7 +6,6 @@ var app = express();
 app.use(parser());
 app.set('view engine', 'jade');
 app.set('views', __dirname+'/views');
-app.use(express.static(__dirname+'/public'));
 app.locals.pretty = true;
 
 // see if we are using the dev route
@@ -17,6 +16,8 @@ if (dev) {
 } else {
     dev = '/';
 }
+
+app.use(dev, express.static(__dirname+'/public'));
 
 //////////////////////////////////////
 // START OF ROUTES
@@ -58,14 +59,25 @@ app.get('/students', function (req, res) {
     });
 });
 
+<<<<<<< HEAD
+app.get('/development', function (req, res) {
+    res.render('development', {
+        'title': 'North Dakota Atlas | Development',
+        'active': 'development',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
 app.get('/population', function (req, res) {
     res.render('population', {
-        'title': 'Population Map',
+        'title': 'North Dakota Atlas | Population Map',
         'active': 'population',
         'urlbase': dev,
         'url': url
     });
 });
+
 //////////////////////////////////////
 // END OF ROUTES
 //////////////////////////////////////
