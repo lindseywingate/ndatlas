@@ -113,6 +113,14 @@ app.get('/ghost', function (req, res) {
     });
 });
 
+app.get('/map-home', function (req, res) {
+    res.render('map-home', {
+        'title': 'North Dakota Atlas | Map Homepage',
+        'active': 'map-home',
+        'urlbase': dev,
+        'url': url
+    });
+});
 //////////////////////////////////////
 // END OF ROUTES
 //////////////////////////////////////
