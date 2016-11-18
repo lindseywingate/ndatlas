@@ -104,6 +104,15 @@ app.get('/foreign', function (req, res) {
     });
 });
 
+app.get('/ghost', function (req, res) {
+    res.render('ghost', {
+        'title': 'North Dakota Atlas | Ghost Towns Map',
+        'active': 'ghost',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
 //////////////////////////////////////
 // END OF ROUTES
 //////////////////////////////////////
