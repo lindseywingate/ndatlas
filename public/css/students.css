@@ -70,3 +70,7 @@ img {
 #textbox {
 	text-align: center;
 }
+
+p {
+	display: hidden;
+}

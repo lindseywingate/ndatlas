@@ -18,6 +18,4 @@ $(document).ready(function() {
 	$("#pic6").on("click", function() {
 		$("#text6").toggle("show");
 	});
-
-
 });
