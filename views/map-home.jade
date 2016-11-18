@@ -1,0 +1,33 @@
+extends master
+
+block css
+	link(rel="stylesheet" type="text/css" href="css/dark_menu.css")
+	link(rel="stylesheet" type="text/css" href="css/map_home.css")
+
+block main
+	<div class="container")
+		h1(id="title") Maps		
+		hr
+		div(class="row")
+			div(class="col-sm-4")
+				div(class="well")
+					h4  Railroads
+					#[a(href="localhost:8005/railroads.html") [img src="/images/maps/RR_1990.png"]]		
+				div(class="well")
+					h4 Population
+					img(src="/images/maps/CP_1990.png")
+			div(class="col-sm-4")
+				div(class="well")
+					h4 Country Churches
+					img(src="/images/maps/CC_1980.png")
+				div(class="well")
+					h4 Foreign Born Population
+					img(src="/images/maps/FB_1990.png")
+			div(class="col-sm-4")
+				div(class="well")
+					h4 Ghost Towns
+					img(src="/images/maps/GT_C1988.png")
+				div(class="well")
+				h4 Religious Affiliation
+					img(src="/images/maps/RA_1990.png")
+			
