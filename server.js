@@ -95,6 +95,15 @@ app.get('/religion', function (req, res) {
     });
 });
 
+app.get('/foreign_born', function (req, res) {
+    res.render('foreign_born', {
+        'title': 'North Dakota Atlas | Foreign Born Map',
+        'active': 'foreign_born',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
 //////////////////////////////////////
 // END OF ROUTES
 //////////////////////////////////////
