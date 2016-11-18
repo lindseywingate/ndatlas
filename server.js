@@ -24,9 +24,9 @@ app.use(dev, express.static(__dirname+'/public'));
 //////////////////////////////////////
 
 app.get('/', function (req, res) {
-    res.render('landing', {
+    res.render('home', {
         'title': 'North Dakota Atlas',
-        'active': 'landing',
+        'active': 'home',
         'urlbase': dev,
         'url': url
     });
