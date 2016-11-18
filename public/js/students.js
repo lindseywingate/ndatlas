@@ -1,5 +1,6 @@
 /*This code is used with the students page for dropdowns*/
 $(document).ready(function() {
+	$(".well").hide();
 	$("#pic1").on("click", function() {
 		$("#text1").toggle("show");
 	});
