@@ -63,7 +63,7 @@ a.disabled {
 @media (min-width: 992px) {
 }
 
-/* UND-style navbar */
+/* UND-style navbar
 .navbar-und {
     background-image: linear-gradient(to bottom, #009900 0px, #006600 100%);
     border-bottom: 3px solid #E6E6E6;
@@ -124,7 +124,7 @@ a.disabled {
         background-color: #006600;
     }
 }
-
+*/
 #mainBody {
     position: absolute;
     top: 54px;
