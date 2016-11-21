@@ -24,9 +24,18 @@ app.use(dev, express.static(__dirname+'/public'));
 //////////////////////////////////////
 
 app.get('/', function (req, res) {
-    res.render('landing', {
+    res.render('home', {
         'title': 'North Dakota Atlas',
-        'active': 'landing',
+        'active': 'home',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
+app.get('/map-home', function (req, res) {
+    res.render('map-home', {
+        'title': 'North Dakota Atlas | Map Homepage',
+        'active': 'map-home',
         'urlbase': dev,
         'url': url
     });
@@ -36,15 +45,6 @@ app.get('/welcome', function (req, res) {
     res.render('welcome', {
         'title': 'North Dakota Atlas | Welcome',
         'active': 'welcome',
-        'urlbase': dev,
-        'url': url
-    });
-});
-
-app.get('/churches', function (req, res) {
-    res.render('country_churches', {
-        'title': 'North Dakota Atlas | Country Churches',
-        'active': 'churches',
         'urlbase': dev,
         'url': url
     });
@@ -63,6 +63,16 @@ app.get('/development', function (req, res) {
     res.render('development', {
         'title': 'North Dakota Atlas | Development',
         'active': 'development',
+        'urlbase': dev,
+        'url': url
+    });
+});
+
+///////////////// Maps /////////////////////////
+app.get('/churches', function (req, res) {
+    res.render('churches', {
+        'title': 'North Dakota Atlas | Country Churches',
+        'active': 'churches',
         'urlbase': dev,
         'url': url
     });
@@ -113,14 +123,6 @@ app.get('/ghost', function (req, res) {
     });
 });
 
-app.get('/map-home', function (req, res) {
-    res.render('map-home', {
-        'title': 'North Dakota Atlas | Map Homepage',
-        'active': 'map-home',
-        'urlbase': dev,
-        'url': url
-    });
-});
 //////////////////////////////////////
 // END OF ROUTES
 //////////////////////////////////////
