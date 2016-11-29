@@ -1,16 +1,16 @@
 @font-face {
 	font-family: Scriptina;
-	src: url(fonts/Scriptina.ttf);
+	src: url(/fonts/Scriptina.ttf);
 }
 
 @font-face {
 	font-family: Lato_Light;
-	src: url(fonts/Lato-Light.ttf);
+	src: url(/fonts/Lato-Light.ttf);
 }
 
 @font-face {
 	font-family: Lato_Heavy;
-	src: url(fonts/Lato-Heavy.ttf);
+	src: url(/fonts/Lato-Heavy.ttf);
 }
 
 
