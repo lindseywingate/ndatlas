@@ -8,7 +8,7 @@ $(document).ready(function() {
 	$("#a_1885").on("click", function() {
 		$("#map").attr("src", "images/maps/GT_C1885.png");
 	});
-	$("#a_1900").on("click", function() {
+	$("#a_1890").on("click", function() {
 		$("#map").attr("src", "images/maps/GT_C1890.png");
 	});
 	$("#a_1895").on("click", function() {
