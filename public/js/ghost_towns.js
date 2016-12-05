@@ -8,13 +8,8 @@ $(document).ready(function() {
 	$("#a_1885").on("click", function() {
 		$("#map").attr("src", "/images/maps/GT_C1885.png");
 	});
-<<<<<<< HEAD
-	$("#a_1900").on("click", function() {
-		$("#map").attr("src", "/images/maps/GT_C1890.png");
-=======
 	$("#a_1890").on("click", function() {
-		$("#map").attr("src", "images/maps/GT_C1890.png");
->>>>>>> 5eca46f627d50ad575105cdff70d69b38d497493
+		$("#map").attr("src", "/images/maps/GT_C1890.png");
 	});
 	$("#a_1895").on("click", function() {
 		$("#map").attr("src", "/images/maps/GT_C1895.png");
