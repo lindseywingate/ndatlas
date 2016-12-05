@@ -133,3 +133,6 @@ a.disabled {
     left: 0;
 }
 
+.well {
+    background-image: none;
+}
