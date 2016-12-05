@@ -23,7 +23,6 @@ body {
 	font-family: Scriptina;
 	font-size: 60px;
 	line-height: 150%;
-	text-align: center;
 	color: white; 
 }
 
@@ -35,7 +34,7 @@ hr {
 }
 
 #text_well {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.4)!important;
 	color: white;
 	font-family: Lato_Italic;
 	font-size: 20px;
