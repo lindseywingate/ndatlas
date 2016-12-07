@@ -19,4 +19,11 @@ $(document).ready(function() {
 	$("#pic6").on("click", function() {
 		$("#text6").toggle("show");
 	});
+	$("#pic7").on("click", function() {
+		$("#text7").toggle("show");
+	});
+	$("#pic8").on("click", function() {
+		$("#text8").toggle("show");
+	});
+
 });
