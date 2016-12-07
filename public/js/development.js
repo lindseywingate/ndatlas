@@ -18,4 +18,7 @@ $(document).ready(function () {
 	$(".Spring2016").on("click", function () {
 		$("#Spring2016").toggle("show");
 	});
+	$(".Fall2016").on("click", function () {
+		$("#Fall2016").toggle("show");
+	});
 });
