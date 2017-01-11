@@ -69,6 +69,15 @@ app.get('/development', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/wheat', function (req, res) {
+	res.render('wheat', {
+		'title': 'North Dakota Atlas | Wheat Production',
+		'active': 'wheat',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
 app.get('/agriculture', function (req, res) {
 	res.render('agriculture', {
 		'title': 'North Dakota Atlas | Agricultural Development',
