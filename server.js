@@ -69,6 +69,15 @@ app.get('/development', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/agriculture', function (req, res) {
+	res.render('agriculture', {
+		'title': 'North Dakota Atlas | Agricultural Development',
+		'active': 'agriculture',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
 app.get('/churches', function (req, res) {
     res.render('churches', {
         'title': 'North Dakota Atlas | Country Churches',
