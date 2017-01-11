@@ -104,7 +104,7 @@ app.get('/religion', function (req, res) {
         'url': url
     });
 });
-pp.get('/foreign', function (req, res) {
+app.get('/foreign', function (req, res) {
     res.render('foreign', {
         'title': 'North Dakota Atlas | Foreign Born Map',
         'active': 'foreign',
