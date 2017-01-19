@@ -35,6 +35,12 @@ hr {
 	color: white; 
 }
 
+#note {
+	font-family: Lato_Italic;
+	font-size: 18px;
+	text-align: center;
+}
+
 .well {
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 1px solid #a88100; 
