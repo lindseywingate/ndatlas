@@ -10,7 +10,7 @@ block main
 		hr
 		h4 *Note: The individual map pages adjust to your screen size. If the map is hidden along the bottom of your screen, simply resize the web browser for a better view.
 		div(class="row")
-			div(class="col-sm-4")
+			div(class="col-sm-3")
 				div(class="well")
 					h4  Railroads
 					a(href="#{url.resolve(urlbase, 'railroads')}") 
@@ -19,32 +19,16 @@ block main
 					h4 Population
 					a(href="#{url.resolve(urlbase, 'population')}")
 						img(src="/images/maps/CP_1990.png")
-				div(class="well")
-					h4 Agriculture Production
-					a(href="#{url.resolve(urlbase, 'agriculture')}")
-						img(src="/images/maps/AP_1992.png")
-				div(class="well")
-					h4 Corn
-					a(href="#{url.resolve(urlbase, 'corn')}")
-						img(src="/images/maps/BCorn_1992.png")
-			div(class="col-sm-4")
+						div(class="col-sm-3")
 				div(class="well")
 					h4 Country Churches
 					a(href="#{url.resolve(urlbase, 'churches')}")
 						img(src="/images/maps/CC_1980.png")
+			div(class="col-sm-3")
 				div(class="well")
 					h4 Foreign Born Population
 					a(href="#{url.resolve(urlbase, 'foreign')}")
 						img(src="/images/maps/FB_1990.png")
-				div(class="well")
-					h4 Wheat
-					a(href="#{url.resolve(urlbase, 'wheat')}")
-						img(src="/images/maps/Wheat_1992.png")
-				div(class="well")
-					h4 Soybeans 
-					a(href="#{url.resolve(urlbase, 'soybeans')}")
-						img(src="/images/maps/BSoybeans_1992.png")
-			div(class="col-sm-4")
 				div(class="well")
 					h4 Ghost Towns
 					a(href="#{url.resolve(urlbase, 'ghost')}")
@@ -53,8 +37,26 @@ block main
 					h4 Religious Affiliation
 					a(href="#{url.resolve(urlbase, 'religion')}")
 						img(src="/images/maps/RA_1990.png")
+			div(class="col-sm-3")
+				div(class="well")
+					h4 Agriculture Production
+					a(href="#{url.resolve(urlbase, 'agriculture')}")
+						img(src="/images/maps/AP_1992.png")
+				div(class="well")
+					h4 Wheat
+					a(href="#{url.resolve(urlbase, 'wheat')}")
+						img(src="/images/maps/Wheat_1992.png")
+				div(class="well")
+					h4 Soybeans 
+					a(href="#{url.resolve(urlbase, 'soybeans')}")
+						img(src="/images/maps/BSoybeans_1992.png")
+			div(class="col-sm-3")
 				div(class="well")
 					h4 Barley
 					a(href="#{url.resolve(urlbase, 'barley')}")
 						img(src="/images/maps/BBarley_1992.png")
-			
+				div(class="well")
+					h4 Corn
+					a(href="#{url.resolve(urlbase, 'corn')}")
+						img(src="/images/maps/BCorn_1992.png")
+
