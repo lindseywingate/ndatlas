@@ -69,6 +69,7 @@ app.get('/development', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+<<<<<<< HEAD
 app.get('/barley', function (req, res) {
 	res.render('barley', {
 		'title': 'North Dakota Atlas | Barley Production',
@@ -105,6 +106,8 @@ app.get('/wheat', function (req, res) {
 	});	
 });
 
+=======
+>>>>>>> e18f611045210d87cab67d777fd0bdd83aaca92e
 app.get('/agriculture', function (req, res) {
 	res.render('agriculture', {
 		'title': 'North Dakota Atlas | Agricultural Development',
