@@ -1,0 +1,46 @@
+##
+# EDITORS
+##
+*~
+*.bak
+*.swp
+*.tmp
+*.log
+
+##
+# VIRTUALENV
+##
+env/
+
+##
+# COVERAGE
+##
+coverage/*
+!coverage/README.md
+
+##
+# WINDOWS
+##
+Thumbs.db
+Desktop.ini
+
+##
+# PYTHON
+##
+*.py[co]
+*.egg
+*.egg-info
+*.coverage
+*.tox
+*.mo
+
+##
+# MAC
+##
+.DS_Store
+
+##
+# Node.js
+##
+node_modules/
+database.nosql
