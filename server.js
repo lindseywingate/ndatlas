@@ -69,6 +69,33 @@ app.get('/development', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/barley', function (req, res) {
+	res.render('barley', {
+		'title': 'North Dakota Atlas | Barley Production',
+		'active': 'Barley',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
+app.get('/corn', function (req, res) {
+	res.render('corn', {
+		'title': 'North Dakota Atlas | Corn Production',
+		'active': 'corn',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
+app.get('/soybeans', function (req, res) {
+	res.render('soybeans', {
+		'title': 'North Dakota Atlas | Soybeans Production',
+		'active': 'soybeans',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
 app.get('/wheat', function (req, res) {
 	res.render('wheat', {
 		'title': 'North Dakota Atlas | Wheat Production',
