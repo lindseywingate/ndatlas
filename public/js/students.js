@@ -25,5 +25,7 @@ $(document).ready(function() {
 	$("#pic8").on("click", function() {
 		$("#text8").toggle("show");
 	});
-
+	$("#pic9").on("click", function() {
+		$("#text9").toggle("show");
+	});
 });
