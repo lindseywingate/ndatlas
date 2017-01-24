@@ -69,6 +69,15 @@ app.get('/development', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/oats', function (req, res) {
+	res.render('oats', {
+		'title': 'North Dakota Atlas | Oats Production',
+		'active': 'Oats',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
 app.get('/barley', function (req, res) {
 	res.render('barley', {
 		'title': 'North Dakota Atlas | Barley Production',
