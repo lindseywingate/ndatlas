@@ -69,6 +69,16 @@ app.get('/development', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/sugarbeets', function (req, res) {
+	res.render('sugarbeets', {
+		'title': 'North Dakota Atlas | Sugar Beets Production',
+		'active': 'Sugar Beets',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
+
 app.get('/oats', function (req, res) {
 	res.render('oats', {
 		'title': 'North Dakota Atlas | Oats Production',
