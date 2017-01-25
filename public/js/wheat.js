@@ -1,44 +1,44 @@
 $(document).ready(function() {
         $("#a_1949").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1949.png");
+                $("#map").attr("src", "/images/maps/BWheat_1949.png");
         });
         $("#a_1954").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1954.png");
+                $("#map").attr("src", "/images/maps/BWheat_1954.png");
         });
         $("#a_1959").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1959.png");
+                $("#map").attr("src", "/images/maps/BWheat_1959.png");
         });
         $("#a_1964").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1964.png");
+                $("#map").attr("src", "/images/maps/BWheat_1964.png");
         });
         $("#a_1969").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1969.png");
+                $("#map").attr("src", "/images/maps/BWheat_1969.png");
         });
         $("#a_1974").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1974.png");
+                $("#map").attr("src", "/images/maps/BWheat_1974.png");
         });
         $("#a_1978").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1978.png");
+                $("#map").attr("src", "/images/maps/BWheat_1978.png");
         });
         $("#a_1982").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1982.png");
+                $("#map").attr("src", "/images/maps/BWheat_1982.png");
         });
         $("#a_1987").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1987.png");
+                $("#map").attr("src", "/images/maps/BWheat_1987.png");
         });
         $("#a_1992").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1992.png");
+                $("#map").attr("src", "/images/maps/BWheat_1992.png");
         });
         $("#a_1997").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_1997.png");
+                $("#map").attr("src", "/images/maps/BWheat_1997.png");
         });
         $("#a_2002").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_2002.png");
+                $("#map").attr("src", "/images/maps/BWheat_2002.png");
         });
         $("#a_2007").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_2007.png");
+                $("#map").attr("src", "/images/maps/BWheat_2007.png");
         });
         $("#a_2012").on("click", function() {
-                $("#map").attr("src", "/images/maps/Wheat_2012.png");
+                $("#map").attr("src", "/images/maps/BWheat_2012.png");
         });
 });
