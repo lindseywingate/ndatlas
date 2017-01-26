@@ -1,11 +1,15 @@
+//no text in narrative field, just UND logo
 extends map_nonarrative
  
+//references map_css 
 block map_css
 link(rel="stylesheet" type="text/css" href="/css/light_menu.css")
  
+//declares which map pic loads first in display position
 block map_div
     img(src="/images/maps/AP_1949.png" id="map")
 
+//switch the image when button clicked
 block map_buttons
     button(type="button" class="btn btn-default" id="a_1949") 1949
     button(type="button" class="btn btn-default" id="a_1954") 1954
@@ -22,6 +26,7 @@ block map_buttons
     button(type="button" class="btn btn-default" id="a_2007") 2007
     button(type="button" class="btn btn-default" id="a_2012") 2012
 
+//javascript for image changing when clicked
 block js
     script(type="text/javascript" src="/js/agriculture.js")
  
