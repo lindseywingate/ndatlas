@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$("#play").on("click", function() {
 			var c = 0;
 			interval = setInterval(function() {
-				if (c>13) {
+				if (c>12) {
 					clearInterval(interval);	
 				}
 				switch_func(c);
