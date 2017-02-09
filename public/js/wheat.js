@@ -58,7 +58,7 @@ $(document).ready(function() {
 				}
 				switch_func(c);
 				c++;
-			}, 500);
+			}, 1000);
 		
 			function switch_func(c) {
 				$("#map").attr("src", "/images/maps/"+map_array[c]);
