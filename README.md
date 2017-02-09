@@ -19,3 +19,7 @@ tested on Linux and Mac OS X.
 
 A local instance of the server can be ran to see all changes made to the code.
 Simply run `node server.js` and you're up and running! To see the website, open a browser and go to [http://localhost:8005](http://localhost:8005).
+
+## Webpages
+
+All the map pages have corresponding JS pages (same name)

@@ -44,8 +44,7 @@ $(document).ready(function() {
 		
 		var map_array = ["BWheat_1949.png", "BWheat_1954.png", "BWheat_1959.png", "BWheat_1964.png", "BWheat_1969.png", "BWheat_1974.png", "BWheat_1978.png", "BWheat_1982.png", "BWheat_1987.png", "BWheat_1992.png", "BWheat_1997.png", "BWheat_2002.png", "BWheat_2007.png", "BWheat_2012.png"];
 		var interval;
-
-		$("#play").on("click", function() {
+		$("#play1").on("click", function() {
 			var c = 0;
 			interval = setInterval(function() {
 				if (c>12) {
@@ -59,5 +58,18 @@ $(document).ready(function() {
 				$("#map").attr("src", "/images/maps/"+map_array[c]);
 			}
 		});		
-
+		$("#play2").on("click", function() {
+			var c = 0;
+			interval = setInterval(function() {
+				if (c>12) {
+					clearInterval(interval);	
+				}
+				switch_func(c);
+				c++;
+			}, 1000);
+		
+			function switch_func(c) {
+				$("#map").attr("src", "/images/maps/"+map_array[c]);
+			}
+		});		
 });
