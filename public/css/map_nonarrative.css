@@ -56,6 +56,7 @@ body {
 }
 
 #play1, #play2 {
+	font-size: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: red solid 2px;
