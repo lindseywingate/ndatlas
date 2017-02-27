@@ -68,6 +68,16 @@ app.get('/development', function (req, res) {
     });
 });
 
+app.get('/test', function (req, res) {
+	res.render('test', {
+		'title': 'North Dakota Atlas | Test Page',
+		'active': 'Test',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
+
 ///////////////// Maps /////////////////////////
 app.get('/sugarbeets', function (req, res) {
 	res.render('sugarbeets', {
