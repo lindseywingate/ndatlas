@@ -30,6 +30,9 @@ body {
     right: 0;
     overflow-y: hidden;
 	background-color: rgba(0, 0, 0, 0.3);
+	border-style: solid;
+	border-color: black;	
+	border-width: 2px;
 }
 
 #mapWrapper {
