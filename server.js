@@ -78,6 +78,16 @@ app.get('/test', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/publicbuilding', function (req, res) {
+	res.render('publicbuilding', {
+		'title': 'North Dakota Atlas | Public Building Projects',
+		'active': 'Public Building',
+		'urlbase': dev,
+		'url': url
+	});	
+});
+
+
 app.get('/sugarbeets', function (req, res) {
 	res.render('sugarbeets', {
 		'title': 'North Dakota Atlas | Sugar Beets Production',
