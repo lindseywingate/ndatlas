@@ -23,8 +23,10 @@ body {
 }
 
 #narrative {
-    position: absolute;
-    top: 0;
+	position: absolute;
+	text-align: center;
+	color: white;
+	top: 0;
     right: 0;
     overflow-y: hidden;
 }
@@ -68,10 +70,12 @@ body {
 
 #content {
     margin-top: 10px;
+	font-weight: bold;
 }
   
 #story{
-    z-index: 1000;
+	font-weight: bold;
+	z-index: 1000;
     height: 650px !important;
 }
 
