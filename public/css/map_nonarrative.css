@@ -29,6 +29,7 @@ body {
 	top: 0;
     right: 0;
     overflow-y: hidden;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 #mapWrapper {
