@@ -23,4 +23,4 @@ $(document).ready(function() {
         $("#a_1942").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1942.png");
         });
-		
+});		
