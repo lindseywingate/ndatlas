@@ -1,5 +1,4 @@
 $(document).ready(function() {
-		var interval;
 		$("#a_1934").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1934.png");
         });
