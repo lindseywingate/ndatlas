@@ -2,7 +2,6 @@ $(document).ready(function() {
 		var interval;
 		$("#a_1934").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1934.png");
-				clearAll(interval);
         });
         $("#a_1935").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1935.png");
@@ -15,7 +14,6 @@ $(document).ready(function() {
         });
         $("#a_1938").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1938.png");
-			
         });
         $("#a_1939").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1939.png");
@@ -26,4 +24,4 @@ $(document).ready(function() {
         $("#a_1942").on("click", function() {
                 $("#map").attr("src", "/images/maps/WPA_1942.png");
         });
-});
+		
