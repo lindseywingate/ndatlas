@@ -1,0 +1,116 @@
+@font-face {
+	font-family: Lato_Italic;
+	src: url(fonts/Lato-Italic.ttf);
+}
+
+body {
+	font-family: Lato_Italic;
+	background-image: url(/images/backgrounds/ghosttownsbackground.JPG);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+#title0 {
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+#story {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	padding: 10px;
+}
+
+#slider {
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+	padding: 0 5px;
+	padding-top: 50%;
+	height: 100%;
+}
+
+#sidebar {
+	display: inline-block;
+	vertical-align: top;
+	width: 460px;
+	padding: 5px;
+}
+
+#narrative {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-y: hidden;
+	color: white;
+	border: black solid 1px;
+}
+
+#mapWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80px;
+    right: 480px;
+    z-index: 0 !important;
+}
+
+#mapDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+}
+
+#map {
+	width: 100%;
+	height: auto;
+}
+
+#btn_group {
+	left: 10px;	
+}
+
+#play1, #play2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: red solid 2px;
+}
+
+#buttonDiv {
+	bottom: 10px;
+}
+
+#content {
+    margin-top: 10px;
+}
+  
+#story{
+    overflow-y: scroll;
+    z-index: 1000;
+    height: 650px !important;
+}
+
+.section:nth-child(n+2) {
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: black solid 2px;
+}
+
+.btn:hover {
+	background-color: gray;
+	border: #cd9b37 solid 2px;
+}
+
+h2 {
+	font-weight: bold;
+	padding-bottom: 15px;
+}

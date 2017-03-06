@@ -15,7 +15,6 @@ $(document).ready(function() {
         });
         $("#a_1969").on("click", function() {
                 $("#map").attr("src", "/images/maps/BWheat_1969-min.png");
-			
         });
         $("#a_1974").on("click", function() {
                 $("#map").attr("src", "/images/maps/BWheat_1974-min.png");
