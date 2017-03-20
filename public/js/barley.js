@@ -41,4 +41,21 @@ $(document).ready(function() {
         $("#a_2012").on("click", function() {
                 $("#map").attr("src", "/images/maps/BBarley_2012.png");
         });
+        var map_array = ["BBarley_1949-min.png", "BBarley_1954-min.png", "BBarley_1959-min.png", "BBarley_1964-min.png", "BBarley_1969-min.png", "BBarley_1974-min.png", "BBarley_1978-min.png", "BBarley_1982-min.png", "BBarley_1987-min.png", "BBarley_1992-min.png", "BBarley_1997-min.png", "BBarley_2002-min.png", "BBarley_2007-min.png", "BBarley_2012-min.png"];
+        $("#play1").on("click", function() {
+            $("#play1").prop("disabled", true);
+            var c = 0;
+            interval = setInterval(function() {
+                if (c>12) {
+                    clearInterval(interval);    
+                    $("#play1").prop("disabled", false);
+                }   
+                switch_func(c);
+                c++;
+            }, 2000);
+    
+        function switch_func(c) {
+            $("#map").attr("src", "/images/maps/"+map_array[c]);
+        }   
+    });   
 });
