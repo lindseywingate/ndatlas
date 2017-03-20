@@ -1,4 +1,4 @@
-/*This css is applied to those maps that have a narrative on the side bar*/
+/*This css is applied to all maps unless they have their own background.*/
 @font-face {
 	font-family: Lato_Italic;
 	src: url(fonts/Lato-Italic.ttf);
