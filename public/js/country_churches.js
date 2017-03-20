@@ -44,12 +44,12 @@ $(document).ready(function() {
 	$("#a_2015").on("click", function() {
 		$("#map").attr("src", "images/maps/CC_2015.png");
 	});
-        var map_array = ["CC_1949-min.png", "CC_1954-min.png", "CC_1959-min.png", "CC_1964-min.png", "CC_1969-min.png", "CC_1974-min.png", "CC_1978-min.png", "CC_1982-min.png", "CC_1987-min.png", "CC_1992-min.png", "CC_1997-min.png", "CC_2002-min.png", "CC_2007-min.png", "CC_2012-min.png"];
+        var map_array = ["CC_1883.png", "CC_1890.png", "CC_1895.png", "CC_1900.png", "CC_1905.png", "CC_1910.png", "CC_1915.png", "CC_1920.png", "CC_1930.png", "CC_1940.png", "CC_1950.png", "CC_1960.png", "CC_1980.png", "CC_2000.png", "CC_2015.png"];
         $("#play1").on("click", function() {
             $("#play1").prop("disabled", true);
             var c = 0;
             interval = setInterval(function() {
-                if (c>12) {
+                if (c>13) {
                     clearInterval(interval);    
                     $("#play1").prop("disabled", false);
                 }   
