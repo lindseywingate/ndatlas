@@ -50,4 +50,21 @@ $(document).ready(function() {
 	$("#a_1988").on("click", function() {
 		$("#map").attr("src", "/images/maps/GT_C1988.png");
 	});
+        var map_array = ["GT_1949-min.png", "GT_1954-min.png", "GT_1959-min.png", "GT_1964-min.png", "GT_1969-min.png", "GT_1974-min.png", "GT_1978-min.png", "GT_1982-min.png", "GT_1987-min.png", "GT_1992-min.png", "GT_1997-min.png", "GT_2002-min.png", "GT_2007-min.png", "GT_2012-min.png"];
+        $("#play1").on("click", function() {
+            $("#play1").prop("disabled", true);
+            var c = 0;
+            interval = setInterval(function() {
+                if (c>12) {
+                    clearInterval(interval);    
+                    $("#play1").prop("disabled", false);
+                }   
+                switch_func(c);
+                c++;
+            }, 2000);
+    
+        function switch_func(c) {
+            $("#map").attr("src", "/images/maps/"+map_array[c]);
+        }   
+    });   
 });

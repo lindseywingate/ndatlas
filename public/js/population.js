@@ -41,4 +41,21 @@ $(document).ready(function() {
 	$("#a_2013").on("click", function() {
 		$("#map").attr("src", "images/maps/CP_2013.png");
 	});
+        var map_array = ["CP_1890.png", "CP_1900.png", "CP_1910.png", "CP_1920.png", "CP_1930.png", "CP_1940.png", "CP_1950.png", "CP_1960.png", "CP_1970.png", "CP_1970.png", "CP_1980.png", "CP_1990.png", "CP_2000.png", "CP_2010.png", "CP_2013.png"];
+        $("#play1").on("click", function() {
+            $("#play1").prop("disabled", true);
+            var c = 0;
+            interval = setInterval(function() {
+                if (c>13) {
+                    clearInterval(interval);    
+                    $("#play1").prop("disabled", false);
+                }   
+                switch_func(c);
+                c++;
+            }, 2000);
+    
+        function switch_func(c) {
+            $("#map").attr("src", "/images/maps/"+map_array[c]);
+        }   
+    });   
 });
