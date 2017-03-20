@@ -52,7 +52,6 @@ $(document).ready(function() {
 				if (c>12) {
 					clearInterval(interval);	
 					$("#play1").prop("disabled", false);
-					$("#play2").prop("disabled", false);
 				}
 				switch_func(c);
 				c++;
