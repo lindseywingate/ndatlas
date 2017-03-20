@@ -50,12 +50,12 @@ $(document).ready(function() {
 	$("#a_1988").on("click", function() {
 		$("#map").attr("src", "/images/maps/GT_C1988.png");
 	});
-        var map_array = ["GT_1949-min.png", "GT_1954-min.png", "GT_1959-min.png", "GT_1964-min.png", "GT_1969-min.png", "GT_1974-min.png", "GT_1978-min.png", "GT_1982-min.png", "GT_1987-min.png", "GT_1992-min.png", "GT_1997-min.png", "GT_2002-min.png", "GT_2007-min.png", "GT_2012-min.png"];
+        var map_array = ["GT_C1874.png", "GT_C1880.png", "GT_C1885.png", "GT_C1890.png", "GT_C1895.png", "GT_C1900.png", "GT_C1905.png", "GT_C1910.png", "GT_C1915.png", "GT_C1920.png", "GT_C1930.png", "GT_C1940.png", "GT_C1950.png", "GT_C1960.png", "GT_C1970.png", "GT_C1980.png", "GT_C1988.png"];
         $("#play1").on("click", function() {
             $("#play1").prop("disabled", true);
             var c = 0;
             interval = setInterval(function() {
-                if (c>12) {
+                if (c>15) {
                     clearInterval(interval);    
                     $("#play1").prop("disabled", false);
                 }   
