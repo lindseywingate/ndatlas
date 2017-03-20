@@ -11,12 +11,12 @@ $(document).ready(function() {
 	$("#a_2010").on("click", function() {
 		$("#map").attr("src", "images/maps/RA_2010.png");
 	});
-        var map_array = ["RA_1949-min.png", "RA_1954-min.png", "RA_1959-min.png", "RA_1964-min.png", "RA_1969-min.png", "RA_1974-min.png", "RA_1978-min.png", "RA_1982-min.png", "RA_1987-min.png", "RA_1992-min.png", "RA_1997-min.png", "RA_2002-min.png", "RA_2007-min.png", "RA_2012-min.png"];
+        var map_array = ["RA_1980.png", "RA_1990.png", "RA_2000.png", "RA_2010.png"];
         $("#play1").on("click", function() {
             $("#play1").prop("disabled", true);
             var c = 0;
             interval = setInterval(function() {
-                if (c>12) {
+                if (c>2) {
                     clearInterval(interval);    
                     $("#play1").prop("disabled", false);
                 }   
