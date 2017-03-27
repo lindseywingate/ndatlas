@@ -2,7 +2,6 @@ $(document).ready(function() {
 		var interval;
 		$("#a_1949").on("click", function() {
                 $("#map").attr("src", "/images/maps/BWheat_1949-min.png");
-				clearAll(interval);
         });
         $("#a_1954").on("click", function() {
                 $("#map").attr("src", "/images/maps/BWheat_1954-min.png");
