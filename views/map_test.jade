@@ -1,0 +1,20 @@
+//This template is for map pages without a narrative along the right side
+extends master
+
+block css
+	link(href="/css/map_nonarrative.css" rel="stylesheet")
+	block map_css
+
+block main
+	div(id="mapWrapper")
+		div(id="mapDiv")
+			block map_div
+	div(id="buttonDiv")
+		div(class="btn-group-vertical" id="btn_group")
+			block map_buttons
+
+block js
+	script(src="https://www.gstatic.com/charts/loader.js")
+	block map_js
+
+block footer
