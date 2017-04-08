@@ -78,6 +78,14 @@ app.get('/test', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
+app.get('/test', function (req, res) {
+	res.render('test', {
+		'title': 'North Dakota Atlas | Test',
+		'active': 'Test',
+		'urlbase': dev,
+		'url': url
+	});	
+}
 app.get('/publicbuilding', function (req, res) {
 	res.render('publicbuilding', {
 		'title': 'North Dakota Atlas | Public Building Projects',
