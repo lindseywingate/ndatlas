@@ -85,7 +85,8 @@ app.get('/test', function (req, res) {
 		'urlbase': dev,
 		'url': url
 	});	
-}
+});
+
 app.get('/publicbuilding', function (req, res) {
 	res.render('publicbuilding', {
 		'title': 'North Dakota Atlas | Public Building Projects',
