@@ -48,7 +48,7 @@ body {
 #mapDiv {
     position: absolute;
     top: 0;
-    left: 15%;
+    left: 5%;
     bottom: 10px;
     width: 100%;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 #btn_group {
-	left: 5%;	
+	left: 2%;	
 }
 
 #play1 {
