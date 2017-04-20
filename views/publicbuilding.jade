@@ -1,25 +1,122 @@
-extends map
-
-block map_css
+extends master
+ 
+block css
 	link(rel="stylesheet" type="text/css" href="/css/light_menu.css") 
+	link(href="/css/map_test.css" rel="stylesheet")
 
-block map_div
-	img(src="/images/maps/WPA_1934-min.png" id="map")
+block main
+	div(id="mapWrapper")
+		div(id="mapDiv")
+			img(src='/images/maps/WPA_1942-min.png' id='map' usemap='#map')
+			map(name='map' id='map')
+				//gc emmons county-courthouse (purple triangle)
+				area(id='emmons' shape='circle', coords='410, 475, 8' href='')
 
-block map_buttons
-	button(type="button" class="btn btn-default" id="a_1934") 1934
-	button(type="button" class="btn btn-default" id="a_1935") 1935
-	button(type="button" class="btn btn-default" id="a_1936") 1936
-	button(type="button" class="btn btn-default" id="a_1937") 1937
-	button(type="button" class="btn btn-default" id="a_1938") 1938
-	button(type="button" class="btn btn-default" id="a_1939") 1939
-	button(type="button" class="btn btn-default" id="a_1940") 1940
-	button(type="button" class="btn btn-default" id="a_1942") 1942		 
+				//gc Oaks Post Office (blue square)
+				area(shape='circle', coords='600, 480, 8') 
 
-block map_story
-	div(id="content")
-		The Federal Emergency Relief Act (FERA) was passed in 1933 as a key aspect of Franklin D. Roosevelt’s New Deal initiative. There were over 500 locations in North Dakota, ranging from building projects to improvements to sewers lines and roads, to use FERA assistance. The people to benefit most from FERA were those in rural communities, of which North Dakota was plentiful. The jobs provided by the building projects directly helped the local community by providing jobs for people severely hurting from the Great Depression, and boosting the economy of the area. There were several different FERA programs - the Civilian Conservation Corps (CCC), Public Works Administration (PWA), the Works Progress Administration, and special projects undertaken by the Treasury Department, among others. The scope of this project is solely on PWA, WPA, and Treasury Department projects throughout North Dakota. To make the project even more concentrated the project has focused primarily on public buildings such as civil centers, auditoriums, courthouses, and other actual buildings used for community and city purposes. This project examines 25 of the 537 projects in North Dakota.
+				//City Hall, Pembina (green triangle)
+				area(shape='circle', coords='658, 112, 8')
+
+				//McElroy Park Auditorium (brown circle)
+				area(shape='circle', coords='545, 382, 8')
+
+				//Jamestown City Auditorium
+				area(shape='circle', coords='540, 390, 8')
+
+				//Memorial Hall, Flasher (green circle)
+				area(shape='circle', coords='325, 440, 8')
+
+				//Memorial Hall, New England (green triangle)
+				area(shape='circle', coords='178, 434, 8') 
+
+				//Inspection Station, Sherwood (green square)
+				area(shape='circle', coords='292, 112, 8')
+			
+				//coordintes Renville County Courthouse (purple circle)
+				area(shape='circle', coords='301, 143, 8')
+			
+				//Inspection Station, Westhope (green square)
+				area(shape='circle', coords='343, 113, 8')
+			
+				//Langdon Post Office (blue square)
+				area(shape='circle', coords='565, 142, 8')
+			
+				//Central High School Auditorium
+				area(shape='circle', coords='683, 247, 8') 
+
+				//Stark County Courthouse (purple triangle)
+				area(shape='circle', coords='187, 389, 8')
+
+				//Wells County Fairgrounds-Festival Hall (yellow circle)
+				area(shape='circle', coords='460, 290, 8')
+
+				//City Hall, Tuttle (green circle)
+				area(shape='circle', coords='430, 357, 8')
+			
+				//Fire Hall (purple circle)
+				area(shape='circle', coords='462, 393, 8')
+			
+				//Rugby Post Office (blue square)
+				area(shape='circle', coords='429, 196, 8')
+
+				//Municipal Auditorium (red circle)
+				area(shape='circle', coords='609, 175, 8')
+
+				//New Rockford Post Office (blue circle)
+				area(shape='circle', coords='503, 285, 8')
+
+				//Lisbon Post Office (blue square)
+				area(shape='circle', coords='634, 445, 8')
+
+				//Wishek Civic Center (yellow circle)
+				area(shape='circle', coords='470, 473, 8')
+
+				//Rogers School Auditorium (brown circle)
+				area(shape='circle', coords='585, 363, 8')
+
+				//Federal Buildling Extension 
+				area(shape='circle', coords='361, 402, 8')
+
+				//City Auditorium, Glen Ullin
+				area(shape='circle', coords='270, 400, 8')
+
+				//Hettinger Post Office
+				area(shape='circle', coords='196, 505, 8')
+
+		
+	div(id="buttonDiv")
+		div(class="btn-group-vertical" id="btn_group")
+			button(type="button" class="btn btn-default" id="a_1934") 1934
+			button(type="button" class="btn btn-default" id="a_1935") 1935
+			button(type="button" class="btn btn-default" id="a_1936") 1936
+			button(type="button" class="btn btn-default" id="a_1937") 1937
+			button(type="button" class="btn btn-default" id="a_1938") 1938
+			button(type="button" class="btn btn-default" id="a_1939") 1939
+			button(type="button" class="btn btn-default" id="a_1940") 1940
+			button(type="button" class="btn btn-default" id="a_1942") 1942
+
+	div(id="narrative") 
+		div(id="sidebar")
+			div(id="story")
+				div(id="content")
+					The Federal Emergency Relief Act (FERA) was passed in 1933 as a key aspect of Franklin D. Roosevelt’s New Deal initiative. There were over 500 locations in North Dakota, ranging from building projects to improvements to sewers lines and roads, to use FERA assistance. The people to benefit most from FERA were those in rural communities, of which North Dakota was plentiful. The jobs provided by the building projects directly helped the local community by providing jobs for people severely hurting from the Great Depression, and boosting the economy of the area. There were several different FERA programs - the Civilian Conservation Corps (CCC), Public Works Administration (PWA), the Works Progress Administration, and special projects undertaken by the Treasury Department, among others. The scope of this project is solely on PWA, WPA, and Treasury Department projects throughout North Dakota. To make the project even more concentrated the project has focused primarily on public buildings such as civil centers, auditoriums, courthouses, and other actual buildings used for community and city purposes. This project examines 25 of the 537 projects in North Dakota.
+				block map_footer
+					div(id="main-footer")
+						div(style="text-align: center;" class="col-sm-12")
+							p #[b Department of Geography and GISc]#[br]#[b 701.777.4246]
+							p(class="address") O'Kelly Hall, Room 152#[br]221 Centennial Drive, Stop 9020#[br]Grand Forks, ND 58202-9020
+						div(style="text-align: center; margin-top: 15px;" class="col-sm-12")
+						div(style="text-align: center; margin: 15px 0;" class="col-sm-12")
+							a(href="http://www.und.edu/")
+								img(src="/images/und_logo_wide.png" alt="Univeristy of North Dakota wide flame logo" class="center-block hidden-xs hidden-sm img-responsive")
+								img(src="/images/und_logo_compact.png" alt="University of North Dakota compact flame logo" class="center-block hidden-md hidden-lg img-responsive")
+
+
 
 block js
-	script(type="text/javascript" src="/js/publicbuilding.js")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+	script(type="text/javascript" src="/js/test.js")
 
+ 

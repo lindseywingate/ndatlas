@@ -100,3 +100,8 @@ h2 {
 	font-weight: bold;
 	padding-bottom: 15px;
 }
+
+/*footer*/
+#main-footer {
+	background-color: rgba(0, 0, 0, 0);
+}

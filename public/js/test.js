@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	//shape js for switching pictures and text
-	$("#emmons").on("click", function() {
-		 $("#map").attr("src", "/images/maps/WPA_1934-min.png");	
+	$("#emmons").on("click", function(e) {
+		e.preventDefault();
+		 console.log("TA DAHHHH");	
+
 	});
 
 	//button js for switching maps	
