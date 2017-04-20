@@ -1,13 +1,14 @@
 extends master 
  
 block css
-	link(rel="stylesheet" type="text/css" href="/css/light_menu.css")
 	link(href="/css/map_nonarrative.css" rel="stylesheet")
+	link(rel="stylesheet" type="text/css" href="/css/light_menu.css")
 
 block main
 	div(id="mapWrapper")
 		div(id="mapDiv")
 			img(src="/images/maps/BSoybeans_1949-min.png" id="map")
+
 	div(id="buttonDiv")
 		div(class="btn-group-vertical" id="btn-group")
 			button(type="button" class="btn btn-default" id="a_1949") 1949
