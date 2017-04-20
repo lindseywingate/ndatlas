@@ -47,12 +47,15 @@ body {
 	height: 640px;
 	left: 940px;
     right: 20px;
-    overflow: auto;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-style: solid;
 	border-color: black;	
 	border-width: 2px;
-	z-index: -1;
+}
+
+#sidebar {
+	overflow-y: scroll;
+	max-height: 640px;
 }
 
 #content {
