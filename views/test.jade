@@ -1,4 +1,7 @@
-extends map_test 
+extends map_test
+
+block map_css
+	link(rel="stylesheet" type="text/css" href="/css/light_menu.css") 
 
 block map_buttons
 	button(type="button" class="btn btn-default" id="a_1934") 1934
@@ -14,15 +17,12 @@ block map_div
 	//image map
 	img(src='/images/maps/WPA_1942-min.png' id='map' usemap='#map')
 	map(name='map' id='map')
-		//1934
 		//gc emmons county-courthouse (purple triangle)
-		area(id='emmons' shape='circle', coords='410, 475, 8')
+		area(id='emmons' shape='circle', coords='410, 475, 8' href='javascript')
 
-		//1935 
 		//gc Oaks Post Office (blue square)
 		area(shape='circle', coords='600, 480, 8') 
 
-		//1936
 		//City Hall, Pembina (green triangle)
 		area(shape='circle', coords='658, 112, 8')
 
@@ -38,7 +38,6 @@ block map_div
 		//Memorial Hall, New England (green triangle)
 		area(shape='circle', coords='178, 434, 8') 
 
-		//1937
 		//Inspection Station, Sherwood (green square)
 		area(shape='circle', coords='292, 112, 8')
 	
@@ -57,7 +56,6 @@ block map_div
 		//Stark County Courthouse (purple triangle)
 		area(shape='circle', coords='187, 389, 8')
 
-		//1938
 		//Wells County Fairgrounds-Festival Hall (yellow circle)
 		area(shape='circle', coords='460, 290, 8')
 
@@ -67,7 +65,6 @@ block map_div
 		//Fire Hall (purple circle)
 		area(shape='circle', coords='462, 393, 8')
 	
-		//1939
 		//Rugby Post Office (blue square)
 		area(shape='circle', coords='429, 196, 8')
 
@@ -94,6 +91,10 @@ block map_div
 
 		//Hettinger Post Office
 		area(shape='circle', coords='196, 505, 8')
+
+block map_story
+	div(id="content")
+		The Federal Emergency Relief Act (FERA) was passed in 1933 as a key aspect of Franklin D. Roosevelt’s New Deal initiative. There were over 500 locations in North Dakota, ranging from building projects to improvements to sewers lines and roads, to use FERA assistance. The people to benefit most from FERA were those in rural communities, of which North Dakota was plentiful. The jobs provided by the building projects directly helped the local community by providing jobs for people severely hurting from the Great Depression, and boosting the economy of the area. There were several different FERA programs - the Civilian Conservation Corps (CCC), Public Works Administration (PWA), the Works Progress Administration, and special projects undertaken by the Treasury Department, among others. The scope of this project is solely on PWA, WPA, and Treasury Department projects throughout North Dakota. To make the project even more concentrated the project has focused primarily on public buildings such as civil centers, auditoriums, courthouses, and other actual buildings used for community and city purposes. This project examines 25 of the 537 projects in North Dakota.
 
 block js
 	script(type="text/javascript" src="/js/test.js")

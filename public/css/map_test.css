@@ -1,7 +1,6 @@
-/*This css is applied to those maps that don't have a narrative on the side bar*/
 @font-face {
 	font-family: Lato_Italic;
-	src: url(/fonts/Lato-Italic.ttf);
+	src: url(fonts/Lato-Italic.ttf);
 }
 
 body {
@@ -16,26 +15,7 @@ body {
 	padding-bottom: 15px;
 }
 
-#sidebar {
-	display: inline-block;
-	vertical-align: top;
-	width: 250px;
-	padding: 5px;
-}
-
-#narrative {
-	position: absolute;
-	text-align: center;
-	color: white;
-	top: 0;
-    right: 0;
-    overflow-y: hidden;
-	background-color: rgba(0, 0, 0, 0.3);
-	border-style: solid;
-	border-color: black;	
-	border-width: 2px;
-}
-
+/*map css*/
 #mapWrapper {
     position: absolute;
     top: 0;
@@ -58,6 +38,29 @@ body {
 	height: 640px;
 }
 
+/*text box css*/
+
+#narrative {
+	position: absolute;
+	color: white;
+	top: 0;
+	height: 640px;
+	left: 940px;
+    right: 20px;
+    overflow: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-style: solid;
+	border-color: black;	
+	border-width: 2px;
+	z-index: -1;
+}
+
+#content {
+    margin-top: 10px;
+	font-weight: bold;
+}
+
+/*button css*/
 #btn_group {
 	left: 2%;	
 }
@@ -71,18 +74,7 @@ body {
 #buttonDiv {
 	bottom: 10px;
 }
-
-#content {
-    margin-top: 10px;
-	font-weight: bold;
-}
   
-#story{
-	font-weight: bold;
-	z-index: 1000;
-    height: 650px !important;
-}
-
 .section:nth-child(n+2) {
     margin-top: 15px;
 }
@@ -98,6 +90,7 @@ body {
 	border: #cd9b37 solid 2px;
 }
 
+/*title stuff*/
 h2 {
 	font-weight: bold;
 	padding-bottom: 15px;
