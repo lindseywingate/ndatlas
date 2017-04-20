@@ -66,45 +66,41 @@ $(document).ready(function() {
 		e.preventDefault();	
 		$("#content").html("<h2>Fire Hall</h2><p>Tappen, North Dakota, lies a half hour to the west of Bismarck. After suffering a fire that destroyed downtown Tappen in 1926, a rebuilding effort took place in the late 1920s through the 1930s. The WPA stepped in to help fund a new fire hall, located in the very center of the town. The small, unimposing, stone building was completed in 1938. Today, it is no longer used as the town’s fire hall, although the name and date of construction are displayed prominently on the structure.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#rogersaud").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>School Auditorium</h2><p>Rogers School Auditorium is one of the least documented sites contained in this project. The former building was constructed in Rogers, North Dakota, in 1938, by the WPA. It was one of many school improvement projects in North Dakota, but one of the few to build a school auditorium. There are no known images of the auditorium.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#wells").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>Wells County Fairgrounds-Festival Hall</h2><p>The Wells County Fairgrounds is a complex of many buildings, but not all were WPA projects. Festival Hall was completed in 1938. It featured “cut granite fieldstone and an arched roof,” and cost $15,000 to complete. During the fair, the drive-in basement was used to house exhibits while the main floor served as a dance hall. It is important to note that pre-World War II, county fairs were a major source of entertainment and were looked forward to by many of the area’s residents. During the rest of the year, the building found use for school dances, political rallies, conventions, and roller-skating. The building is still existent today and used regularly.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#ullin").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>City Auditorium</h2><p>Glen Ullin is located half way between Bismarck and Dickinson. Located on Main Street, the auditorium was designed by A.J. Weinburger and completed by the PWA in 1938. It is constructed of orange brick and stretches half a block long. It sits at the border of the commercial area of town and the residential area. It is not clear if the building is still in service or not, although there are records of it being renovated in 1976. The upkeep has unfortunately been neglected and the front stairs are crumbling as well as some of the exterior brick.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#hettingerpost").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>Hettinger Post Office</h2><p>Hettinger, North Dakota is located close to the southwestern border with South Dakota. The post office, which is still in use today, was built in 1938, with assistance from the Treasury Department. The building, like other rural post offices throughout North Dakota, was built in the “starved classical” style. Although the Treasury Department had estimated $65,000 for the construction of the building, it only cost $44,800. The building took a little under a year to complete, which was unusual for a FERA building project. Many renovations have been done over the years to modernize the building to suit the needs of the community. Some of the renovation seems to have diminished the integrity of the building somewhat.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#municipalaud").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>Municipal Auditorium</h2><p>Edinburg lies in the northwest quadrant of North Dakota. The Municipal Auditorium, built in 1939, was one of the latest buildings built by the WPA in North Dakota, and completed at the cost of $16,000. The building is also one of the few examples of stucco architecture built by the WPA in the state. The auditorium was not only equipped with a wood-framed auditorium, but a basketball court as well. The auditorium sits in the middle of the town and today it is used as a hardware and general store. The store has been integrated into the structure of the interior instead of being remodeled. The building remains well loved by the community.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#rockford").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>New Rockford Post Office</h2><p>New Rockford, North Dakota is located centrally in the state. The post office was built in 1939, with Treasury Department funds through the FERA. The Treasury Department had allocated $85,000 for the building’s construction, however, the total cost to build the post office was $52,400. The building boasts a large mural commissioned by the WPA, and painted by Eduard Bok Ulreich for $640. The mural, entitled “Advance Guard of the West,” depicts a rather abstract group of Indians in traditional clothing astride horses. Ulreich stated his inspiration for the mural was that he felt “that Americans should become more familiar with the beauty and character of the red man. Because the white man wished to justify their greed for land, the Indian, unfairly, was often portrayed in an unfavorable light.” The building is in good repair, although it has the most simplistic exterior of the post offices examined in this project.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#rugby").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>Rugby Post Office</h2><p>The town of Rugby is located in the north central part of North Dakota. Its post office was built in 1939, through Treasury Department funds. Although the building was built in the “starved classical” style, a cupola sits atop the building, which is unusual for the style of architecture, which is better known for its simplicity. Although $85,000 was allotted for the project, the actual cost of the building came in far under that amount, at $55,377. This post office, like Lisbon, New Rockford, and Langdon, features a WPA-commissioned work of art. A large mural by Kenneth Callahan was painted showcasing Rugby’s claim to fame as the geographical center of North America, and the agricultural importance of the area. The building is currently in good repair and still used by the community as a post office.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#lisbonpost").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>Lisbon Post Office</h2><p>The Lisbon Post Office is in Ransom County in southeastern, North Dakota. Although simple in design, the building has historical and architectural significance to the town. The post office was part of a plan set forth by the U.S. Treasury Department during the 1930’s to build post offices and other federal buildings to jump start a struggling economy and bring jobs to towns across the nation. In 1935, the Lisbon Post Office was granted the partial funding to complete a new post office. The Construction Program Act of June 21, 1938, gave the community consent for the post office to be built. The dedication of the new facility took place on December 5, 1940. Although still relatively simple, Lisbon Post Office features more costly wood and marble accents, and fireproof materials on the interior,. The building also included a WPA-commissioned sculpture to be placed in the post, but unfortunately, that sculpture has been lost.</p>");
 	});
-	$("# ").on("click", function(e) {
+	$("#wishek ").on("click", function(e) {
 		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
-	});
-	$("# ").on("click", function(e) {
-		e.preventDefault();	
-		$("# ").html("<h2> </h2><p> </p>");
+		$("#content").html("<h2>Wishek Civic Center</h2><p>The Wishek Civic Center, completed in 1942, was the final WPA project built in North Dakota. The structure cost $140,000 to build, which far exceeds most of the other projects examined. Sixty men worked eight to ten hour days to complete the building. For sixty years the building served as the school gymnasium, city offices, and a community center. What is interesting about this project is the use of native stone. Prairie boulders were cut into shape and then cemented into place. This gives the building a unique exterior.</p>");
 	});
 	$("#sherwood").on("click", function(e) {
 		e.preventDefault();	
