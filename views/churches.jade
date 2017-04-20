@@ -1,25 +1,36 @@
-extends churches_map
+extends master
 
-block map_div
-    img(src="/images/maps/CC_1980.png" id="map")
+block css 
+	link(href="/css/churches.css" rel="stylesheet")
+	
+block main
+	div(id="mapWrapper")
+		div(id="mapDiv")
+			img(src="/images/maps/CC_1980.png" id="map")
+	div(id="buttonDiv")
+		div(class="btn-group-vertical" id="btn_group")
+			button(type="button" class="btn btn-default" id="a_1883") 1883
+			button(type="button" class="btn btn-default" id="a_1890") 1890
+			button(type="button" class="btn btn-default" id="a_1895") 1895
+			button(type="button" class="btn btn-default" id="a_1900") 1900
+			button(type="button" class="btn btn-default" id="a_1905") 1905
+			button(type="button" class="btn btn-default" id="a_1910") 1910
+			button(type="button" class="btn btn-default" id="a_1915") 1915
+			button(type="button" class="btn btn-default" id="a_1920") 1920
+			button(type="button" class="btn btn-default" id="a_1930") 1930
+			button(type="button" class="btn btn-default" id="a_1940") 1940
+			button(type="button" class="btn btn-default" id="a_1950") 1950
+			button(type="button" class="btn btn-default" id="a_1960") 1960
+			button(type="button" class="btn btn-default" id="a_1980") 1980
+			button(type="button" class="btn btn-default" id="a_2000") 2000
+			button(type="button" class="btn btn-default" id="a_2015") 2015
+			button(type="button" class="btn btn-default" id="play1") Play
 
-block map_buttons
-    button(type="button" class="btn btn-default" id="a_1883") 1883
-    button(type="button" class="btn btn-default" id="a_1890") 1890
-    button(type="button" class="btn btn-default" id="a_1895") 1895
-    button(type="button" class="btn btn-default" id="a_1900") 1900
-    button(type="button" class="btn btn-default" id="a_1905") 1905
-    button(type="button" class="btn btn-default" id="a_1910") 1910
-    button(type="button" class="btn btn-default" id="a_1915") 1915
-    button(type="button" class="btn btn-default" id="a_1920") 1920
-    button(type="button" class="btn btn-default" id="a_1930") 1930
-    button(type="button" class="btn btn-default" id="a_1940") 1940
-    button(type="button" class="btn btn-default" id="a_1950") 1950
-    button(type="button" class="btn btn-default" id="a_1960") 1960
-    button(type="button" class="btn btn-default" id="a_1980") 1980
-    button(type="button" class="btn btn-default" id="a_2000") 2000
-    button(type="button" class="btn btn-default" id="a_2015") 2015
-    button(type="button" class="btn btn-default" id="play1") Play
+	div(id="narrative")
+			div(id="sidebar")
+				img(src="/images/und_logo_wide.png" alt="Univeristy of North Dakota wide flame logo" class="center-block hidden-xs hidden-sm img-responsive")
+				img(src="/images/und_logo_compact.png" alt="University of North Dakota compact flame logo" class="center-block hidden-md hidden-lg img-responsive")			 
+				p *Please allow the page to load completely before clicking the play buttons.
 
 block map_js
-    script(src="/js/country_churches.js")
+	script(src="/js/country_churches.js")
