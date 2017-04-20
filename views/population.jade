@@ -1,28 +1,39 @@
-extends map_nonarrative
+extends master
 
-block map_css
+block css
 	link(rel="stylesheet" type="text/css" href="/css/light_menu.css") 
+	link(href="/css/map_nonarrative.css" rel="stylesheet")
 
-block map_div
-	img(src="/images/maps/CP_1990.png" id="map")
+block main
+	div(id="mapWrapper")
+		div(id="mapDiv")
+			img(src="/images/maps/CP_1990.png" id="map")
+	div(id="buttonDiv")
+		div(class="btn-group-vertical" id="btn_group")
+			button(type="button" class="btn btn-default" id="a_1890") 1890
+			button(type="button" class="btn btn-default" id="a_1900") 1900
+			button(type="button" class="btn btn-default" id="a_1910") 1910
+			button(type="button" class="btn btn-default" id="a_1920") 1920
+			button(type="button" class="btn btn-default" id="a_1930") 1930
+			button(type="button" class="btn btn-default" id="a_1940") 1940
+			button(type="button" class="btn btn-default" id="a_1950") 1950
+			button(type="button" class="btn btn-default" id="a_1960") 1960		 
+			button(type="button" class="btn btn-default" id="a_1970") 1970
+			button(type="button" class="btn btn-default" id="a_1980") 1980 
+			button(type="button" class="btn btn-default" id="a_1990") 1990
+			button(type="button" class="btn btn-default" id="a_2000") 2000
+			button(type="button" class="btn btn-default" id="a_2010") 2010
+			button(type="button" class="btn btn-default" id="a_2013") 2013
+			button(type="button" class="btn btn-default" id="play1") Play
 
-block map_buttons
-	button(type="button" class="btn btn-default" id="a_1890") 1890
-	button(type="button" class="btn btn-default" id="a_1900") 1900
-	button(type="button" class="btn btn-default" id="a_1910") 1910
-	button(type="button" class="btn btn-default" id="a_1920") 1920
-	button(type="button" class="btn btn-default" id="a_1930") 1930
-	button(type="button" class="btn btn-default" id="a_1940") 1940
-	button(type="button" class="btn btn-default" id="a_1950") 1950
-	button(type="button" class="btn btn-default" id="a_1960") 1960		 
-	button(type="button" class="btn btn-default" id="a_1970") 1970
-	button(type="button" class="btn btn-default" id="a_1980") 1980 
-	button(type="button" class="btn btn-default" id="a_1990") 1990
-	button(type="button" class="btn btn-default" id="a_2000") 2000
-	button(type="button" class="btn btn-default" id="a_2010") 2010
-	button(type="button" class="btn btn-default" id="a_2013") 2013
-	button(type="button" class="btn btn-default" id="play1") Play
+div(id="narrative")
+		div(id="sidebar")
+			img(src="/images/und_logo_wide.png" alt="Univeristy of North Dakota wide flame logo" class="center-block hidden-xs hidden-sm img-responsive")
+			img(src="/images/und_logo_compact.png" alt="University of North Dakota compact flame logo" class="center-block hidden-md hidden-lg img-responsive")		
+			p *Please allow the page to load completely before clicking the play buttons.
 
 block js
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
 	script(type="text/javascript" src="/js/population.js")
 
