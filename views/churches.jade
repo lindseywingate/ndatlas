@@ -7,6 +7,7 @@ block main
 	div(id="mapWrapper")
 		div(id="mapDiv")
 			img(src="/images/maps/CC_1980.png" id="map")
+
 	div(id="buttonDiv")
 		div(class="btn-group-vertical" id="btn_group")
 			button(type="button" class="btn btn-default" id="a_1883") 1883
@@ -32,5 +33,8 @@ block main
 				img(src="/images/und_logo_compact.png" alt="University of North Dakota compact flame logo" class="center-block hidden-md hidden-lg img-responsive")			 
 				p *Please allow the page to load completely before clicking the play buttons.
 
-block map_js
-	script(src="/js/country_churches.js")
+block js
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+	script(src="/js/churches.js")
+
