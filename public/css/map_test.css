@@ -1,7 +1,7 @@
 /*This css is applied to those maps that don't have a narrative on the side bar*/
 @font-face {
 	font-family: Lato_Italic;
-	src: url(fonts/Lato-Italic.ttf);
+	src: url(/fonts/Lato-Italic.ttf);
 }
 
 body {
