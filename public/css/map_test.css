@@ -61,6 +61,8 @@ body {
 #content {
     margin-top: 10px;
 	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /*button css*/
