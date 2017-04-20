@@ -68,7 +68,7 @@ $(document).ready(function() {
 	});
 	$("#rogersaud").on("click", function(e) {
 		e.preventDefault();	
-		$("#content").html("<h2>School Auditorium</h2><p>Rogers School Auditorium is one of the least documented sites contained in this project. The former building was constructed in Rogers, North Dakota, in 1938, by the WPA. It was one of many school improvement projects in North Dakota, but one of the few to build a school auditorium. There are no known images of the auditorium.</p>");
+		$("#content").html("<h2>Rogers School Auditorium</h2><p>Rogers School Auditorium is one of the least documented sites contained in this project. The former building was constructed in Rogers, North Dakota, in 1938, by the WPA. It was one of many school improvement projects in North Dakota, but one of the few to build a school auditorium. There are no known images of the auditorium.</p>");
 	});
 	$("#wells").on("click", function(e) {
 		e.preventDefault();	
