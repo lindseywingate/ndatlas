@@ -78,10 +78,10 @@ app.get('/test', function (req, res) {
 });
 
 ///////////////// Maps /////////////////////////
-app.get('/test', function (req, res) {
-	res.render('test', {
-		'title': 'North Dakota Atlas | Test',
-		'active': 'Test',
+app.get('/missiles', function (req, res) {
+	res.render('missiles', {
+		'title': 'North Dakota Atlas | Missiles',
+		'active': 'Missiles',
 		'urlbase': dev,
 		'url': url
 	});	
