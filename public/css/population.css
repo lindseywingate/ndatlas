@@ -1,3 +1,4 @@
+/*This css is applied to those maps that don't have a narrative on the side bar*/
 @font-face {
 	font-family: Lato_Italic;
 	src: url(fonts/Lato-Italic.ttf);
@@ -5,7 +6,7 @@
 
 body {
 	font-family: Lato_Italic;
-	background-image: url(/images/backgrounds/nd.jpg);
+	background-image: url(/images/backgrounds/sunflowers.jpg);
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
@@ -15,7 +16,26 @@ body {
 	padding-bottom: 15px;
 }
 
-/*map css*/
+#sidebar {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	padding: 5px;
+}
+
+#narrative {
+	position: absolute;
+	text-align: center;
+	color: white;
+	top: 0;
+    right: 0;
+    overflow-y: hidden;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-style: solid;
+	border-color: black;	
+	border-width: 2px;
+}
+
 #mapWrapper {
     position: absolute;
     top: 0;
@@ -28,46 +48,14 @@ body {
 #mapDiv {
     position: absolute;
     top: 0;
-    left: 5%;
+    left: 15%;
     bottom: 10px;
     width: 100%;
 }
 
 #map {
-	width: 800px;
-	height: 640px;
-}
-
-/*text box css*/
-
-#narrative {
-	position: absolute;
-	color: white;
-	top: 0;
-	height: 640px;
-	left: 940px;
-    right: 20px;
-	background-color: rgba(0, 0, 0, 0.3);
-	border-style: solid;
-	border-color: black;	
-	border-width: 2px;
-}
-
-#sidebar {
-	overflow-y: scroll;
-	max-height: 640px;
-}
-
-#content {
-    margin-top: 10px;
-	font-weight: bold;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-/*button css*/
-#btn_group {
-	left: 2%;	
+	width: 100%;
+	height: auto;
 }
 
 #play1 {
@@ -77,9 +65,21 @@ body {
 }
 
 #buttonDiv {
+	padding-left: 5%; 
 	bottom: 10px;
 }
+
+#content {
+    margin-top: 10px;
+	font-weight: bold;
+}
   
+#story{
+	font-weight: bold;
+	z-index: 1000;
+    height: 650px !important;
+}
+
 .section:nth-child(n+2) {
     margin-top: 15px;
 }
@@ -95,22 +95,7 @@ body {
 	border: #cd9b37 solid 2px;
 }
 
-/*title stuff*/
 h2 {
 	font-weight: bold;
 	padding-bottom: 15px;
-}
-
-#notification {
-	color: rgb(66, 176, 244);
-}
-
-img {
-	width: 100%;
-	height: auto;
-}
-
-/*footer*/
-#main-footer {
-	background-color: rgba(0, 0, 0, 0);
 }
