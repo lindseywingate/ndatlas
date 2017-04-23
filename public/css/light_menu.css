@@ -9,5 +9,6 @@ li a {
 	color: black;
 	padding: 16px;
 	font-family: Lato_Italic;
+	background: rgba(255, 255, 255, 0.5);
 }
 
