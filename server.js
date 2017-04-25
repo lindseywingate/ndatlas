@@ -81,7 +81,7 @@ app.get('/test', function (req, res) {
 app.get('/missiles', function (req, res) {
 	res.render('missiles', {
 		'title': 'North Dakota Atlas | Missiles',
-		'active': 'Missiles',
+		'active': 'missiles',
 		'urlbase': dev,
 		'url': url
 	});	
