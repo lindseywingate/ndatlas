@@ -68,20 +68,11 @@ app.get('/development', function (req, res) {
     });
 });
 
-app.get('/test', function (req, res) {
-    res.render('test', {
-        'title': 'North Dakota Atlas | test',
-        'active': 'test',
-        'urlbase': dev,
-        'url': url
-    });
-});
-
 ///////////////// Maps /////////////////////////
 app.get('/missiles', function (req, res) {
 	res.render('missiles', {
 		'title': 'North Dakota Atlas | Missiles',
-		'active': 'missiles',
+		'active': 'Missiles',
 		'urlbase': dev,
 		'url': url
 	});	
